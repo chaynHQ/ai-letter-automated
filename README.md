@@ -14,7 +14,7 @@ A Next.js application for handling complaints using AI, built with Vercel AI SDK
 
 ```bash
 git clone <your-repository-url>
-cd complaint-tool
+cd ai-letter-automated
 ```
 
 2. Install dependencies:

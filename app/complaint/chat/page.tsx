@@ -8,8 +8,10 @@ import { useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { Loader2 } from 'lucide-react'
+import { Suspense } from 'react'
 
-export default function ChatPage() {
+// Create a separate client component for the chat content
+function ChatContent() {
   const searchParams = useSearchParams()
   const submission = searchParams.get('submission')
   const response = searchParams.get('response')
@@ -164,5 +166,14 @@ export default function ChatPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+// Modify the main page component
+export default function ChatPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ChatContent />
+    </Suspense>
   )
 }

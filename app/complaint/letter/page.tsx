@@ -1,12 +1,13 @@
 'use client'
 
+import { Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 import { useState } from 'react'
 
-export default function LetterPage() {
+function LetterContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const submission = searchParams.get('submission')
@@ -84,5 +85,13 @@ export default function LetterPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function LetterPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LetterContent />
+    </Suspense>
   )
 }

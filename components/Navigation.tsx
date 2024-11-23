@@ -1,4 +1,5 @@
-import { Lightbulb } from 'lucide-react';
+import Image from 'next/image';
+import logo from '/public/branding.png';
 import Link from 'next/link';
 
 export function Navigation() {
@@ -8,7 +9,7 @@ export function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <Lightbulb className="h-8 w-8 text-pink-500" />
+              <Image src={logo} alt="logo" className="h-8 w-8" />
             </Link>
           </div>
           

@@ -1,4 +1,5 @@
-import { Lightbulb } from 'lucide-react';
+import Image from 'next/image';
+import logo from '/public/branding.png';
 import Link from 'next/link';
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center">
-              <Lightbulb className="h-8 w-8 text-pink-500" />
+              <Image src={logo} alt="logo" className="h-8 w-8" />
             </Link>
           </div>
           

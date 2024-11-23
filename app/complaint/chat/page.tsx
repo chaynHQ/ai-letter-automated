@@ -1,14 +1,12 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { Card } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
 import { useChat } from 'ai/react'
-import { useSearchParams } from 'next/navigation'
-import { useRouter } from 'next/navigation'
-import { useState } from 'react'
 import { Loader2 } from 'lucide-react'
-import { Suspense } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { Suspense, useState } from 'react'
 
 // Create a separate client component for the chat content
 function ChatContent() {
@@ -69,7 +67,7 @@ function ChatContent() {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Column - User Submission */}
         <div>
-          <h2 className="text-2xl font-bold mb-6 border-b-2 border-pink-200 pb-2 inline-block">
+          <h2 className="text-2xl mb-6 border-b-2 border-pink-200 pb-2 inline-block">
             Your submission
           </h2>
           <Card className="p-6 bg-white">
@@ -81,7 +79,7 @@ function ChatContent() {
 
         {/* Right Column - Chat Interface */}
         <div>
-          <h2 className="text-2xl font-bold mb-6 border-b-2 border-pink-200 pb-2 inline-block">
+          <h2 className="text-2xl mb-6 border-b-2 border-pink-200 pb-2 inline-block">
             Our Questions
           </h2>
           <div className="space-y-4">
@@ -136,7 +134,7 @@ function ChatContent() {
                 />
                 <Button
                   type="submit"
-                  className="bg-pink-200 hover:bg-pink-300 text-gray-800"
+                  className="bg-peach-400 hover:bg-peach-300 text-gray-800"
                   disabled={isLoading}
                 >
                   Send

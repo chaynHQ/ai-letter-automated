@@ -27,7 +27,7 @@ function LetterContent() {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Column - User Submission */}
         <div>
-          <h2 className="text-2xl font-semi-bold mb-6 border-b-2 border-pink-200 pb-2 inline-block">
+          <h2 className="text-2xl font-semi-bold mb-6 border-b-2 border-peach-400 pb-2 inline-block">
             Your submission
           </h2>
           <Card className="p-6 bg-white">

@@ -67,7 +67,7 @@ function ChatContent() {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Column - User Submission */}
         <div>
-          <h2 className="text-2xl mb-6 border-b-2 border-pink-200 pb-2 inline-block">
+          <h2 className="text-2xl mb-6 border-b-2 border-peach-400 pb-2 inline-block">
             Your submission
           </h2>
           <Card className="p-6 bg-white">
@@ -79,7 +79,7 @@ function ChatContent() {
 
         {/* Right Column - Chat Interface */}
         <div>
-          <h2 className="text-2xl mb-6 border-b-2 border-pink-200 pb-2 inline-block">
+          <h2 className="text-2xl mb-6 border-b-2 border-peach-400 pb-2 inline-block">
             Our Questions
           </h2>
           <div className="space-y-4">
@@ -134,6 +134,7 @@ function ChatContent() {
                 />
                 <Button
                   type="submit"
+                  size="lg"
                   className="bg-peach-400 hover:bg-peach-300 text-gray-800"
                   disabled={isLoading}
                 >

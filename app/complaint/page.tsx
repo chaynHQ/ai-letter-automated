@@ -1,18 +1,17 @@
 import { ComplaintForm } from '@/components/ComplaintForm';
-import Image from 'next/image';
 
 export default function ComplaintPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8">
+        <h1 className="text-4xl font-bold mb-8 underline underline-offset-8 decoration-primaryDark">
           Write down what happened
         </h1>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-6">
             <p className="font-medium">Guideline text</p>
-            <ul className="space-y-4 text-gray-700">
+            <ul className="space-y-4 text-gray-700 list-disc">
               <li><strong>General information:</strong> Include the police force's name, the date, time, location of the incident, the accused's name or relationship, and the crime reference number (if known).</li>
               <li><strong>Incident details:</strong> Briefly describe what happened, the type of crime (e.g., sexual or physical abuse), and key actions by the perpetrator.</li>
               <li><strong>Reporting details:</strong> Note when and where you reported the crime, how the police handled it, and the outcome if you have one (e.g., case closed due to insufficient evidence).</li>

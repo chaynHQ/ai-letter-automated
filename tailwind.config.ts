@@ -40,6 +40,8 @@ const config: Config = {
         },
         background: "var(--background)",
         foreground: "var(--foreground)",
+		primaryDark: "var(--primary-dark)",
+		secondaryDark: "var(--secondary-dark)",
         card: {
           DEFAULT: "var(--card)",
           foreground: "var(--card-foreground)",

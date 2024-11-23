@@ -6,6 +6,11 @@ import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { LoadingScreen } from './LoadingScreen'
 
+function textAreaAdjust(element: HTMLTextAreaElement): void {
+  element.style.height = "1px";
+  element.style.height = `${element.scrollHeight + 5}px`;
+}
+
 export function ComplaintForm() {
   const router = useRouter()
   const { messages, input, handleInputChange, handleSubmit, isLoading } =
@@ -30,6 +35,7 @@ export function ComplaintForm() {
           <Textarea
             value={input}
             onChange={handleInputChange}
+            onInput={(e) => textAreaAdjust(e.target as HTMLTextAreaElement)}
             placeholder="Type your complaint details here..."
             className="min-h-[200px] resize-none p-4"
             disabled={isLoading}

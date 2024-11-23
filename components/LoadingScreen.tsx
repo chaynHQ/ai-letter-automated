@@ -1,15 +1,28 @@
 'use client';
+import Image from 'next/image';
+import letterThrower from '/public/letter-thrower.png';
 
-import { Quote } from 'lucide-react';
 
 export function LoadingScreen() {
+  const text = 'Analysing...';
+  const regex = /./g;
+        
   return (
-    <div className="fixed inset-0 bg-pink-100 bg-opacity-95 flex flex-col items-center justify-center z-50">
+    <div className="fixed inset-0 bg-peach-100 flex flex-col items-center justify-center z-50" style={{opacity: 0.9}}>
       <div className="max-w-2xl mx-auto px-4 text-center space-y-8">
+      <Image src={letterThrower} alt="person throwing around letters" width={200} height={200} />
         <div className="flex justify-center space-x-2">
-          <Quote className="w-8 h-8 text-pink-400 transform rotate-180" />
-          <h2 className="text-4xl font-bold text-gray-800">Analysing...</h2>
-          <Quote className="w-8 h-8 text-pink-400" />
+        <h2 className="text-4xl font-bold text-gray-800">
+          {text.match(regex)!.map((char, index) => (
+            <span
+              key={`${char}-${index}`}
+             className="inline-block animate-pulse"
+             style={{ animationDelay: `${index * 0.05}s` }}
+            >
+              {char === " " ? "\u00A0" : char}
+            </span>
+            ))}
+          </h2>
         </div>
         
         <div className="animate-pulse flex justify-center">

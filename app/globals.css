@@ -13,11 +13,13 @@
     --background: #fdf3ef;
     --foreground: #ffeae0;
     --card: 0 0% 100%;
-    --card-foreground: #ffeae0;
-    --primary: #ff976a;
-    --primary-foreground: #ffeae0;
-    --secondary: #f0244d;
-    --secondary-foreground: #f4d6d8;
+    --card-foreground: text-gray-800;
+    --primary:#ffeae0;
+    --primary-foreground: text-gray-800;
+    --primary-dark: #ff976a;
+    --secondary-dark: #f0244d;
+    --secondary:#f4d6d8;
+    --secondary-foreground: text-gray-800;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
     --border: 0 0% 89.8%;
@@ -32,6 +34,9 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background;
   }
+  html {
+    @apply text-gray-800;
+  } 
 }

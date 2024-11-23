@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
 import { Quote } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 export default function OptionsPage() {
   const [letterContent, setLetterContent] = useState('')
@@ -37,7 +37,7 @@ export default function OptionsPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-2xl font-bold mb-6 border-b-2 border-pink-200 pb-2 inline-block">
+        <h1 className="text-2xl font-bold mb-6 border-b-2 border-peach-400 pb-2 inline-block">
           Your Options
         </h1>
 
@@ -74,7 +74,7 @@ export default function OptionsPage() {
             <a href="https://www.chayn.co/global-directory" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outline"
-              className="bg-pink-50 hover:bg-pink-100 text-gray-800 border-pink-200"
+              className="bg-pink-50 hover:bg-pink-100 text-gray-800 border-peach-400"
             >
               Find out more
             </Button>

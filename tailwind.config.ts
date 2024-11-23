@@ -19,6 +19,7 @@ const config: Config = {
         },
         peach: {
           "100": "var(--primary-foreground)",
+          "150": "#FDE9E0",
           "200": "#FFD5C3",
           "300": "#FFC1A5",
           "400": "#FFAC88",

@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily : {
+        serif: ['Merriweather', 'serif']
+      },
       colors: {
         pink: {
           "100": "var(--secondary-foreground)",

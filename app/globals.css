@@ -12,7 +12,7 @@
   :root {
     --background: #fdf3ef;
     --foreground: #ffeae0;
-    --card: 0 0% 100%;
+    --card: white;
     --card-foreground: text-gray-800;
     --primary:#ffeae0;
     --primary-foreground: text-gray-800;

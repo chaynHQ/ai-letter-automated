@@ -148,8 +148,8 @@ function ChatContent() {
       </div>
 
       {/* Help Notice */}
-      <div className="mt-12 bg-pink-100 p-6 rounded-lg flex items-start gap-4">
-        <div className="p-2 bg-white rounded-full">
+      {/* <div className="mt-12 bg-pink-100 p-6 rounded-lg flex items-start gap-4"> */}
+        {/* <div className="p-2 bg-white rounded-full">
           <svg
             className="w-4 h-4"
             viewBox="0 0 24 24"
@@ -159,12 +159,12 @@ function ChatContent() {
           >
             <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM12 8v4M12 16h.01" />
           </svg>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <p className="font-medium">Do you need immediate help?</p>
           <p>Call the police or try these resources.</p>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
   )
 }

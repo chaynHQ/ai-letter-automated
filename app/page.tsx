@@ -16,32 +16,32 @@ export default function Home() {
         <p className="text-lg mb-12 text-gray-700">
           Our letter writing tool is designed to guide you through the process of creating a formal complaint. Whether you want to highlight missteps, express concerns, or challenge a decision to drop your case, this tool helps you take back some control—on your terms, at your pace.
         </p>
-
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <Card className="p-6">
             <h2 className="text-2xl font-semibold mb-4">Things to know before you get started:</h2>
             <ul className="space-y-4">
               <li className="flex gap-2">
                 <span className="text-gray-700">•</span>
-                <span>Your description of what happened to you and anything else you submit to the tool will remain completely confidential.</span>
+                <span>Anything you submit to the tool will remain completely confidential.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-gray-700">•</span>
-                <span>Our tool uses AI to interpret what you submit and find the relevant police force guidelines that demonstrate their process has not been followed properly.</span>
+                <span>Our tool uses AI to turn your submission into a clear and accurate letter.
+                </span>
               </li>
               <li className="flex gap-2">
                 <span className="text-gray-700">•</span>
-                <span>You'll need a police reference number or some way to refer to your initial report.</span>
+                <span>You'll need some information about your report so the police can find your case. This could be a crime reference number, but don't worry if you don't have this.</span>
               </li>
             </ul>
           </Card>
-
           <Card className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">Here's how the tool works</h2>
+            <h2 className="text-2xl font-semibold mb-4">Here's how the tool works:</h2>
             <ol className="list-decimal list-inside space-y-4">
-              <li>Follow the prompts to explain what happened.</li>
-              <li>[more steps]</li>
-              <li>[more steps]</li>
+              <li>Describe the incident/s you're complaining about in your own words.</li>
+              <li>Answer the follow-up questions to provide more details.</li>
+              <li>Review and edit the generated letter as needed.</li>
+              <li>Explore your options and decide whether to proceed.</li>
             </ol>
           </Card>
         </div>
@@ -53,14 +53,13 @@ export default function Home() {
             </Button>
           </Link>
         </div>
-
-        <div className="bg-pink-100 p-6 rounded-lg flex items-start gap-4">
+        {/* <div className="bg-pink-100 p-6 rounded-lg flex items-start gap-4">
           <AlertCircle className="w-6 h-6 text-gray-700 mt-1" />
           <div>
             <p className="font-medium">Do you need immediate help?</p>
             <p>Call the police or try these resources.</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

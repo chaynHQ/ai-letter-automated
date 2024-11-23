@@ -36,7 +36,7 @@ export function ComplaintForm() {
             value={input}
             onChange={handleInputChange}
             onInput={(e) => textAreaAdjust(e.target as HTMLTextAreaElement)}
-            placeholder="Type your complaint details here..."
+            placeholder="Type the details of you complaint here..."
             className="min-h-[200px] resize-none p-4 bg-white rounded-lg border border-gray-200"
             disabled={isLoading}
           />

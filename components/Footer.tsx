@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-white border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-[100px_1fr_1fr_1fr_1fr] gap-8">
           <div>
             <Link href="/" className="flex items-center">
               <Image src={logo} alt="logo" className="h-8 w-8" />
@@ -47,16 +47,18 @@ export function Footer() {
             <p className="text-gray-600">id number 3949003</p>
             <p className="text-gray-600">Series of other info necessary</p>
             <p className="text-gray-600">Realized by Lorem Ipsum using Webflow</p>
-            <div className="space-y-2">
-              <p className="font-medium text-gray-700">Follow us on social media:</p>
-              <div className="space-y-1">
-                <Link href="#" className="block text-gray-600 hover:text-gray-900">Facebook</Link>
-                <Link href="#" className="block text-gray-600 hover:text-gray-900">Instagram</Link>
-                <Link href="#" className="block text-gray-600 hover:text-gray-900">Twitter</Link>
-                <Link href="#" className="block text-gray-600 hover:text-gray-900">YouTube</Link>
-              </div>
+          </div>
+
+          <div className="space-y-2">
+            <p className="font-medium text-gray-700">Follow us on social media:</p>
+            <div className="space-y-1">
+              <Link href="#" className="block text-gray-600 hover:text-gray-900">Facebook</Link>
+              <Link href="#" className="block text-gray-600 hover:text-gray-900">Instagram</Link>
+              <Link href="#" className="block text-gray-600 hover:text-gray-900">Twitter</Link>
+              <Link href="#" className="block text-gray-600 hover:text-gray-900">YouTube</Link>
             </div>
           </div>
+
         </div>
       </div>
     </footer>

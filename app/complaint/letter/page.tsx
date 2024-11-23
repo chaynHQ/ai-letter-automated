@@ -1,11 +1,9 @@
 'use client'
 
-import { Suspense } from 'react'
-import { useSearchParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import Link from 'next/link'
-import { useState } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { Suspense, useState } from 'react'
 
 function LetterContent() {
   const searchParams = useSearchParams()
@@ -29,7 +27,7 @@ function LetterContent() {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Column - User Submission */}
         <div>
-          <h2 className="text-2xl font-bold mb-6 border-b-2 border-pink-200 pb-2 inline-block">
+          <h2 className="text-2xl font-semi-bold mb-6 border-b-2 border-pink-200 pb-2 inline-block">
             Your submission
           </h2>
           <Card className="p-6 bg-white">
@@ -41,7 +39,7 @@ function LetterContent() {
 
         {/* Right Column - Generated Letter */}
         <div>
-          <h2 className="text-2xl font-bold mb-6 border-b-2 border-[#C8D6B9] pb-2 inline-block">
+          <h2 className="text-2xl font-semi-bold mb-6 border-b-2 border-[#C8D6B9] pb-2 inline-block">
             Generated Letter
           </h2>
           <Card className="p-6 bg-white shadow-lg relative">

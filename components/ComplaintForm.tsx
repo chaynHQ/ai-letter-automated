@@ -1,9 +1,9 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
-import { useChat } from 'ai/react'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
+import { useChat } from 'ai/react'
+import { useRouter } from 'next/navigation'
 import { LoadingScreen } from './LoadingScreen'
 
 function textAreaAdjust(element: HTMLTextAreaElement): void {
@@ -37,7 +37,7 @@ export function ComplaintForm() {
             onChange={handleInputChange}
             onInput={(e) => textAreaAdjust(e.target as HTMLTextAreaElement)}
             placeholder="Type your complaint details here..."
-            className="min-h-[200px] resize-none p-4"
+            className="min-h-[200px] resize-none p-4 bg-white rounded-lg border border-gray-200"
             disabled={isLoading}
           />
         </div>
@@ -45,7 +45,7 @@ export function ComplaintForm() {
         <div className="flex justify-end">
           <Button
             type="submit"
-            className="bg-pink-200 hover:bg-pink-300 text-gray-800"
+            className="bg-pink-200 hover:bg-pink-300 font-normal text-gray-800 text-xl"
             disabled={isLoading}
           >
             {isLoading ? 'Processing...' : 'Submit'}

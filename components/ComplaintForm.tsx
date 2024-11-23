@@ -45,7 +45,7 @@ export function ComplaintForm() {
         <div className="flex justify-end">
           <Button
             type="submit"
-            className="bg-pink-200 hover:bg-pink-300 font-normal text-gray-800 text-xl"
+            className="bg-pink-200 hover:bg-pink-300 font-normal text-gray-800 text-lg"
             disabled={isLoading}
           >
             {isLoading ? 'Processing...' : 'Submit'}

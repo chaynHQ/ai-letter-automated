@@ -8,7 +8,7 @@ export function LoadingScreen() {
   const regex = /./g;
         
   return (
-    <div className="fixed inset-0 bg-peach-100 flex flex-col items-center justify-center z-50" style={{opacity: 0.9}}>
+    <div className="fixed inset-0 bg-peach-100 flex flex-col items-center bg-peach-200 justify-center z-50" style={{opacity: 0.9}}>
       <div className="max-w-2xl mx-auto px-4 text-center space-y-8">
       <Image src={letterThrower} alt="person throwing around letters" width={200} height={200} />
         <div className="flex justify-center space-x-2">

@@ -2,14 +2,14 @@ import { ComplaintForm } from '@/components/ComplaintForm';
 
 export default function ComplaintPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-semi-bold mb-8 underline underline-offset-8 decoration-primaryDark">
+    <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-4xl font-semi-bold mb-8 underline underline-offset-8 decoration-peach-400 mb-10">
           Write down what happened
         </h1>
 
         <div className="grid md:grid-cols-2 md:gap-10 mb-12 pl-3">
-          <div className="space-y-6">
+          <div className="space-y-6 mb-12">
             <ul className="space-y-4 text-gray-700 list-disc">
               <li className="mb-2"><strong>General information:</strong> Include the police force's name, the date, time, location of the incident, the accused's name or relationship, and the crime reference number (if known).</li>
               <li className="mb-2"><strong>Incident details:</strong> Briefly describe what happened, the type of crime (e.g., sexual or physical abuse), and key actions by the perpetrator.</li>

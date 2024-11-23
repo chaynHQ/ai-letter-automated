@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-semi-bold mb-8 underline underline-offset-8 decoration-peach-400 mb-10">Make a formal complaint without a lawyer</h1>
+        <h1 className="text-4xl mb-8 underline underline-offset-8 decoration-peach-400 mb-10">Make a formal complaint without a lawyer</h1>
         
         <p className="text-lg mb-8 text-gray-700">
           We understand how frustrating and painful it can be when the systems meant to protect us fall short. If you've felt let down by the UK police or criminal justice system, we're here to help you find a way to be heard.
@@ -17,7 +17,7 @@ export default function Home() {
         </p>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <Card className="p-6 border-none">
-            <h2 className="text-2xl font-semibold mb-4 underline underline-offset-8 decoration-peach-400 mb-6">Things to know before you get started:</h2>
+            <h2 className="text-2xl mb-4 underline underline-offset-8 decoration-peach-400 mb-6">Things to know before you get started:</h2>
             <ul className="space-y-4">
               <li className="flex gap-2">
                 <span className="text-gray-700">•</span>
@@ -35,7 +35,7 @@ export default function Home() {
             </ul>
           </Card>
           <Card className="p-6 border-none">
-            <h2 className="text-2xl font-semibold mb-4 underline underline-offset-8 decoration-peach-400 mb-6">Here's how the tool works:</h2>
+            <h2 className="text-2xl mb-4 underline underline-offset-8 decoration-peach-400 mb-6">Here's how the tool works:</h2>
             <ol className="list-decimal list-inside space-y-4">
               <li>Describe the incident/s you're complaining about in your own words.</li>
               <li>Answer the follow-up questions to provide more details.</li>

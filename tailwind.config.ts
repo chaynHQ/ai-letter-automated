@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         pink: {
           "100": "var(--secondary-foreground)",
-          "200": "#F3AAB5",
+          "200": "#F3D6D8",
           "300": "#F27D93",
           "400": "#F15170",
           "500": "var(--secondary)",
@@ -20,7 +20,7 @@ const config: Config = {
         peach: {
           "100": "var(--primary-foreground)",
           "150": "#FDE9E0",
-          "200": "#FFD5C3",
+          "200": "#FFEAE1",
           "300": "#FFC1A5",
           "400": "#FFAC88",
           "500": "var(--primary)",

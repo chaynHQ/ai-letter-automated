@@ -89,7 +89,7 @@ function ChatContent() {
                   <Card
                     key={message.id}
                     className={`p-4 ${
-                      message.role === 'user' ? 'bg-pink-100 ml-12' : 'bg-white'
+                      message.role === 'user' ? 'bg-pink-200 ml-12' : 'bg-peach-200'
                     }`}
                   >
                     <pre className="text-gray-700 whitespace-pre-wrap font-sans">

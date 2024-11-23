@@ -42,7 +42,7 @@ export default function OptionsPage() {
         </h1>
 
         <p className="text-gray-700 mb-12">
-        We’re here to help you take action and amplify your voice, even when the system falls short.
+        Here are some options for next steps—whether it’s sending your letter, exploring resources, or seeking further support.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -69,7 +69,8 @@ export default function OptionsPage() {
             <div className="absolute top-0 left-0 w-full h-1 bg-pink-200"></div>
             <Quote className="w-6 h-6 text-pink-300 mb-4" />
             <h2 className="text-xl font-semibold mb-4">Gain support</h2>
-            <p className="text-gray-600 mb-6">Find support services near you</p>
+            <p className="text-gray-600 mb-6">Find support services<br></br>near you
+            </p>
             <a href="https://www.chayn.co/global-directory" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outline"

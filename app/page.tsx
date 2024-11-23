@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className="flex justify-end mb-12">
           <Link href="/complaint">
-            <Button size="lg" className="bg-pink-200 hover:bg-pink-300 text-gray-800  text-xl">
+            <Button size="lg" className="bg-pink-200 hover:bg-pink-300 text-gray-800  text-lg">
               Next
             </Button>
           </Link>

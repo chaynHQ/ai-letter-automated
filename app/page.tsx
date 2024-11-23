@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 underline underline-offset-8 decoration-primaryDark">Make a formal complaint without a lawyer</h1>
+        <h1 className="text-4xl font-semi-bold mb-8 underline underline-offset-8 decoration-primaryDark">Make a formal complaint without a lawyer</h1>
         
         <p className="text-lg mb-8 text-gray-700">
           We understand how frustrating and painful it can be when the systems meant to protect us fall short. If you've felt let down by the UK police or criminal justice system, we're here to help you find a way to be heard.

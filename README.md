@@ -1,7 +1,6 @@
-# AI Complaint Tool
+# AI Advocacy Tool
 
-A Next.js application for handling complaints using AI, built with Vercel AI SDK and Langtail.
-
+A Next.js application for advocating for yourself using AI, built with Vercel AI SDK and Langtail. This project was created in collaboration with 42 London and is a proof of concept. 
 ## Prerequisites
 
 - Node.js (version 16 or higher)

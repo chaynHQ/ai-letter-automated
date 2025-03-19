@@ -1,3 +1,4 @@
+import { BetaBanner } from "@/components/BetaBanner";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import type { Metadata } from "next";
@@ -25,7 +26,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${openSans.className} min-h-screen flex flex-col`}>
         <Navigation />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow">
+          <>
+            <BetaBanner/>
+            {children}
+          </>
+         </main>
         <Footer />
       </body>
     </html>
